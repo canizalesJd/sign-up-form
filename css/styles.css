@@ -1,7 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,700;1,300&display=swap");
+
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
+
+body {
+	font-family: "Poppins", sans-serif;
+	font-weight: 400;
+	font-size: 19px;
+}
+
+@font-face {
+	font-family: Norse Bold;
+	src: url(../fonts/Norse-Bold.otf);
+}
+
+a {
+	color: inherit;
+}
+
+:root {
+	--white: #fafafa;
 }
 
 .main-container {
@@ -10,22 +31,45 @@
 	display: flex;
 }
 
+.text-large {
+	font-family: Norse Bold;
+	font-size: 100px;
+	font-weight: 300;
+	text-transform: uppercase;
+}
+
 .hero {
 	background-image: url(../img/hero-bg.jpg);
+	background-position: center center;
+	background-size: cover;
+	background-repeat: no-repeat;
 	flex: 1;
+	max-width: 45vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
 }
 
 .logo {
-	max-height: 90px;
+	max-height: 100px;
+	margin: 10px;
 }
 
 .logo-container {
-	margin-top: 40vh;
+	margin-top: 30vh;
+	padding: 0px 20px;
+	color: var(--white);
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 2px solid red;
+	background: rgba(0, 0, 0, 0.7);
+}
+
+.hero-footer {
+	font-size: 1em;
+	padding: 5px;
+	display: flex;
+	justify-content: center;
+	color: #fff;
+	font-weight: 300;
 }
