@@ -1,125 +1,137 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Sign Up - The Odin Project</title>
-		<link rel="stylesheet" href="css/styles.css" />
-	</head>
-	<body>
-		<main class="main-container">
-			<section class="hero">
-				<div class="logo-container">
-					<img
-						src="img/odin-lined.png"
-						alt="The Odin Project logo"
-						class="logo" />
-					<h1 class="text-large text-odin">ODIN</h1>
-				</div>
-				<div class="hero-footer">
-					<p class="text-small">
-						Photo by
-						<a
-							href="https://unsplash.com/photos/a-view-of-a-city-with-palm-trees-and-mountains-in-the-background-F03eeyLmLVA"
-							target="_blank"
-							>Bjarne Vijfvinkel
-						</a>
-						on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
-					</p>
-				</div>
-			</section>
-			<section class="sign-up">
-				<div class="form-container">
-					<p class="cta-text text-medium">
-						This is not a real online service! You know you need something like
-						this in your life to help you realize your deepest dreams. Sign up
-						now to get started.
-					</p>
-					<span class="text-medium margin-20-top margin-20-bottom"
-						>You know you want to.
-					</span>
-					<form action="#">
-						<h2 class="text-medium margin-20-bottom text-bold">
-							Let's do this!
-						</h2>
-						<div class="inputs-container">
-							<div class="form-row">
-								<div class="input-wrapper">
-									<label for="first-name" class="input-label text-small"
-										>First Name</label
-									>
-									<input
-										type="text"
-										name="first-name"
-										id="first-name"
-										class="form-input" />
-								</div>
-								<div class="input-wrapper">
-									<label for="last-name" class="input-label text-small"
-										>Last Name</label
-									>
-									<input
-										type="text"
-										name="last-name"
-										id="last-name"
-										class="form-input" />
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="input-wrapper">
-									<label for="email" class="input-label text-small"
-										>Email</label
-									>
-									<input
-										type="email"
-										name="email"
-										id="email"
-										class="form-input" />
-								</div>
-								<div class="input-wrapper">
-									<label for="phone" class="input-label text-small"
-										>Phone</label
-									>
-									<input
-										type="tel"
-										name="phone"
-										id="phone"
-										class="form-input" />
-								</div>
-							</div>
-							<div class="form-row">
-								<div class="input-wrapper">
-									<label for="password" class="input-label text-small"
-										>Password</label
-									>
-									<input
-										type="password"
-										name="password"
-										id="password"
-										class="form-input" />
-								</div>
-								<div class="input-wrapper">
-									<label for="confirm-password" class="input-label text-small"
-										>Confirm Password</label
-									>
-									<input
-										type="password"
-										name="confirm-password"
-										id="confirm-password"
-										class="form-input" />
-								</div>
-							</div>
-						</div>
-						<div class="form-buttons">
-							<a href="#" class="button sign-up-btn">Create Account</a>
-							<div class="sign-in-container margin-30-top">
-								<span class="text-regular">Already have an account?</span
-								><a href="#" class="button login-btn">Login</a>
-							</div>
-						</div>
-					</form>
-				</div>
-			</section>
-		</main>
-	</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up - The Odin Project</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <main class="main-container">
+      <section class="hero">
+        <div class="logo-container">
+          <img
+            src="img/odin-lined.png"
+            alt="The Odin Project logo"
+            class="logo"
+          />
+          <h1 class="text-large text-odin">ODIN</h1>
+        </div>
+        <div class="hero-footer">
+          <p class="text-small">
+            Photo by
+            <a
+              href="https://unsplash.com/photos/a-view-of-a-city-with-palm-trees-and-mountains-in-the-background-F03eeyLmLVA"
+              target="_blank"
+              >Bjarne Vijfvinkel
+            </a>
+            on <a href="https://unsplash.com/" target="_blank">Unsplash</a>
+          </p>
+        </div>
+      </section>
+      <section class="sign-up">
+        <div class="form-container">
+          <p class="cta-text text-medium">
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            now to get started.
+          </p>
+          <span class="text-medium margin-20-top margin-20-bottom"
+            >You know you want to.
+          </span>
+          <hr class="margin-20-bottom divisor" />
+          <form action="#">
+            <h2 class="text-medium text-bold">Let's do this!</h2>
+            <div class="inputs-container">
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <label for="first-name" class="input-label text-small"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    name="first-name"
+                    id="first-name"
+                    class="form-input"
+                    placeholder="Enter first name..."
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="last-name" class="input-label text-small"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    name="last-name"
+                    id="last-name"
+                    class="form-input"
+                    placeholder="Enter last name..."
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <label for="email" class="input-label text-small"
+                    >Email</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    class="form-input"
+                    placeholder="email@domain.com"
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="phone" class="input-label text-small"
+                    >Phone</label
+                  >
+                  <input
+                    type="tel"
+                    name="phone"
+                    id="phone"
+                    class="form-input"
+                    placeholder="Enter your phone..."
+                  />
+                </div>
+              </div>
+              <div class="form-row">
+                <div class="input-wrapper">
+                  <label for="password" class="input-label text-small"
+                    >Password</label
+                  >
+                  <input
+                    type="password"
+                    name="password"
+                    id="password"
+                    class="form-input"
+                    placeholder="Enter your password..."
+                  />
+                </div>
+                <div class="input-wrapper">
+                  <label for="confirm-password" class="input-label text-small"
+                    >Confirm Password</label
+                  >
+                  <input
+                    type="password"
+                    name="confirm-password"
+                    id="confirm-password"
+                    class="form-input"
+                    placeholder="Confirm your password..."
+                  />
+                </div>
+              </div>
+            </div>
+            <div class="form-buttons">
+              <a href="#" class="button sign-up-btn">Create Account</a>
+              <div class="sign-in-container margin-30-top">
+                <span class="text-regular">Already have an account?</span
+                ><a href="#" class="button login-btn">Login</a>
+              </div>
+            </div>
+          </form>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
