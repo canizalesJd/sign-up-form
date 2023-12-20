@@ -23,6 +23,9 @@ a {
 
 :root {
 	--white: #fafafa;
+	--dark-purple: #3d2f7f;
+	--light-purple: #8a6eff;
+	--orange: #ff8a6e;
 }
 
 .main-container {
@@ -32,10 +35,33 @@ a {
 }
 
 .text-large {
-	font-family: Norse Bold;
 	font-size: 100px;
 	font-weight: 300;
 	text-transform: uppercase;
+}
+
+.text-odin {
+	font-family: Norse Bold;
+}
+
+.text-medium {
+	font-size: 1.4em;
+}
+
+.text-small {
+	font-size: 0.8em;
+}
+
+.margin-20-bottom {
+	margin-bottom: 20px;
+}
+
+.margin-20-top {
+	margin-top: 20px;
+}
+
+.margin-30-top {
+	margin-top: 30px;
 }
 
 .hero {
@@ -43,8 +69,8 @@ a {
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
-	flex: 1;
-	max-width: 45vw;
+	flex: 3;
+	max-width: 30vw;
 	display: flex;
 	flex-direction: column;
 	justify-content: space-between;
@@ -53,9 +79,11 @@ a {
 .logo {
 	max-height: 100px;
 	margin: 10px;
+	-webkit-user-drag: none;
 }
 
 .logo-container {
+	user-select: none;
 	margin-top: 30vh;
 	padding: 0px 20px;
 	color: var(--white);
@@ -65,6 +93,14 @@ a {
 	background: rgba(0, 0, 0, 0.7);
 }
 
+.text-italic {
+	font-style: italic;
+}
+
+.text-bold {
+	font-weight: 700;
+}
+
 .hero-footer {
 	font-size: 1em;
 	padding: 5px;
@@ -72,4 +108,77 @@ a {
 	justify-content: center;
 	color: #fff;
 	font-weight: 300;
+}
+
+.sign-up {
+	display: flex;
+	flex: 9;
+	max-width: 70vw;
+	min-height: 100vh;
+	margin: auto;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.form-container {
+	display: flex;
+	flex-direction: column;
+	width: 90%;
+	padding: 20px;
+	margin: auto;
+}
+
+.inputs-container {
+	max-width: 700px;
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+	padding: 20px 0px;
+}
+
+.form-row {
+	display: flex;
+	width: 100%;
+	padding: 10px 0px;
+}
+
+.input-wrapper {
+	width: 50%;
+	display: flex;
+	flex-direction: column;
+}
+
+.input-label {
+	text-transform: uppercase;
+}
+
+input {
+	border-radius: 7px;
+	border: 1px solid #dddd;
+	color: #2e2e2e;
+	outline: none;
+	box-shadow: none;
+	padding: 15px 10px;
+	font-size: 1rem;
+	max-width: 300px;
+	font-family: inherit;
+}
+
+.button {
+	text-decoration: none;
+	cursor: pointer;
+	font-weight: bold;
+	padding: 10px;
+	border-radius: 7px;
+}
+
+.sign-up-btn {
+	background-color: var(--dark-purple);
+	color: var(--white);
+	padding: 14px 20px;
+}
+
+.login-btn {
+	color: var(--dark-purple);
 }
