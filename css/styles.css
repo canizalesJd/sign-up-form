@@ -10,6 +10,7 @@ body {
   font-family: "Poppins", sans-serif;
   font-weight: 400;
   font-size: 17px;
+  overflow-x: hidden;
 }
 
 @font-face {
@@ -257,4 +258,33 @@ input:focus {
 .hide {
   display: none !important;
   transition: 300ms;
+}
+
+@media screen and (max-width: 1040px) {
+  .main-container {
+    flex-direction: column !important;
+  }
+  .hero {
+    min-width: 100vw;
+  }
+  .sign-up {
+    min-height: 100%;
+    min-width: 95%;
+  }
+  body {
+    font-size: 16px;
+  }
+}
+
+@media screen and (max-width: 770px) {
+  .form-row {
+    flex-direction: column;
+  }
+  .input-wrapper {
+    min-width: 100%;
+    margin: 10px 0px;
+  }
+  body {
+    font-size: 14px;
+  }
 }

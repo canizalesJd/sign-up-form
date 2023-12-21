@@ -115,6 +115,7 @@ body.appendChild(formAlert);
 submit.addEventListener("click", () => {
   if (!submit.disabled) {
     body.appendChild(formAlert);
+    formAlert_icon.src = "../img/MdiCheckCircle.svg";
     formAlert.classList.add("success");
     formAlert.classList.remove("hide");
     formAlert.classList.add("show");
