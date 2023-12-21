@@ -26,7 +26,8 @@ a {
   --white: #fafafa;
   --dark-purple: #3d2f7f;
   --light-purple: #8a6eff;
-  --orange: #ff8a6e;
+  --orange: #fa7250;
+  --dark-orange: #fa5d35;
 }
 
 .main-container {
@@ -313,5 +314,37 @@ footer img:hover {
   }
   body {
     font-size: 14px;
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  body {
+    background: #161616;
+    color: #fafafa;
+    outline: 5px dashed #000;
+  }
+  input {
+    background: #161616;
+    color: #d4d4d4;
+  }
+  .input-label {
+    color: #d4d4d4;
+  }
+  .sign-up-btn {
+    background-color: var(--orange);
+    color: #161616;
+  }
+  .sign-up-btn:hover {
+    background-color: var(--dark-orange);
+  }
+  .login-btn {
+    color: var(--orange);
+  }
+  .login-btn:hover {
+    color: var(--dark-orange);
+  }
+  footer img {
+    -webkit-filter: invert(100%);
+    filter: invert(100%);
   }
 }
