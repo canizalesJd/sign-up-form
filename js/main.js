@@ -104,7 +104,7 @@ formAlert_close.classList.add("form-alert-close");
 const formAlert_close_icon = document.createElement("img");
 formAlert_close.appendChild(formAlert_close_icon);
 formAlert_close.addEventListener("click", close);
-formAlert_close_icon.src = "../img/PhXCircleFill.svg";
+formAlert_close_icon.src = "../img/close-icon.svg";
 
 formAlert.appendChild(formAlert_icon);
 formAlert.appendChild(formAlert_text);
@@ -115,7 +115,7 @@ body.appendChild(formAlert);
 submit.addEventListener("click", () => {
   if (!submit.disabled) {
     body.appendChild(formAlert);
-    formAlert_icon.src = "../img/MdiCheckCircle.svg";
+    formAlert_icon.src = "../img/success-icon.svg";
     formAlert.classList.add("success");
     formAlert.classList.remove("hide");
     formAlert.classList.add("show");
