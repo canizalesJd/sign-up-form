@@ -1,3 +1,4 @@
+const body = document.querySelector("body");
 const firstName = document.getElementById("first-name");
 const lastName = document.getElementById("last-name");
 const email = document.getElementById("email");
@@ -13,7 +14,27 @@ const PhoneRegex = /^\d{8,10}$/;
 const PasswordRegex =
   /(?=^.{8,}$)((?=.*\d)|(?=.*\W+))(?![.\n])(?=.*[A-Z])(?=.*[a-z]).*$/;
 
-firstName.addEventListener("blur", () => {
+const lightMode = document.getElementById("light-mode");
+const darkMode = document.getElementById("dark-mode");
+
+darkMode.addEventListener("click", () => {
+  body.classList.remove("theme-light");
+  body.classList.add("theme-dark");
+});
+
+lightMode.addEventListener("click", () => {
+  body.classList.remove("theme-dark");
+  body.classList.add("theme-light");
+});
+
+if (
+  window.matchMedia &&
+  window.matchMedia("(prefers-color-scheme: dark)").matches
+) {
+  document.body.classList.add("theme-dark");
+} else document.body.classList.add("theme-light");
+
+firstName.addEventListener("input", () => {
   if (!NameRegex.test(firstName.value)) {
     firstName.classList.add("invalid");
     submit.disabled = true;
@@ -23,7 +44,7 @@ firstName.addEventListener("blur", () => {
   }
 });
 
-lastName.addEventListener("blur", () => {
+lastName.addEventListener("input", () => {
   if (!NameRegex.test(lastName.value)) {
     lastName.classList.add("invalid");
   } else {
@@ -32,7 +53,7 @@ lastName.addEventListener("blur", () => {
   }
 });
 
-email.addEventListener("blur", () => {
+email.addEventListener("input", () => {
   if (!EmailRegex.test(email.value)) {
     email.classList.add("invalid");
     submit.disabled = true;
@@ -42,7 +63,7 @@ email.addEventListener("blur", () => {
   }
 });
 
-phone.addEventListener("blur", () => {
+phone.addEventListener("input", () => {
   if (!PhoneRegex.test(phone.value)) {
     phone.classList.add("invalid");
     submit.disabled = true;
@@ -86,8 +107,6 @@ const close = () => {
   formAlert.classList.remove("show");
   formAlert.classList.add("hide");
 };
-
-const body = document.querySelector("body");
 
 const formAlert = document.createElement("div");
 formAlert.classList.add("form-alert");
